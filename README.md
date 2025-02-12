@@ -1,6 +1,3 @@
-Aquí tienes el archivo `README.md` completamente en formato **Markdown** (`.md`), listo para copiar y pegar sin errores:  
-
-
 # 🧠 Pensamiento Algorítmico
 
 📚 Repositorio de notas y recursos para el curso de **Pensamiento Algorítmico**.  
