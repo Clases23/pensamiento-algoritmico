@@ -165,5 +165,35 @@ mi variable = 10  # No puede contener espacios
 @nombre = "Error"  # No puede contener caracteres especiales
 for = 5  # No puede ser una palabra reservada
 ```
+---
+# 📌 Estructuras de Programación Secuencial
+
+Las **estructuras de programación secuencial** son aquellas donde las instrucciones se ejecutan una tras otra en el mismo orden en el que aparecen en el código. No hay bifurcaciones ni repeticiones, solo un flujo continuo de ejecución.
+
+### ✅ Características:
+- Se ejecutan **línea por línea** de arriba hacia abajo.
+- No hay condiciones (`if`) ni ciclos (`while`, `for`).
+- Son la base de cualquier programa antes de introducir estructuras de control.
+
+### 📌 Ejemplo en pseudocódigo:
+```
+Inicio
+    Leer nombre
+    Escribir "Hola, ", nombre
+    Leer edad
+    Escribir "Tienes ", edad, " años"
+Fin
+```
+
+### 📌 Ejemplo en Python:
+```python
+nombre = input("Ingrese su nombre: ")
+print("Hola,", nombre)
+
+edad = int(input("Ingrese su edad: "))
+print("Tienes", edad, "años")
+```
+
+✅ En este caso, las instrucciones se ejecutan en orden, sin saltos ni repeticiones.
 
 ---
