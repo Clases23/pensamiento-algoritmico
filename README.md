@@ -43,7 +43,7 @@ Aquí encontrarás explicaciones, ejemplos en pseudocódigo y Python, así como 
 💡 **¿Tienes una idea para mejorar el contenido?**  
 Si quieres contribuir, puedes abrir un **issue** o enviar un **pull request** con mejoras.
 
-📩 Para preguntas o sugerencias, puedes abrir un [Contacta aquí](https://github.com/tu-usuario/pensamiento-algoritmico/issues).
+📩 Para preguntas o sugerencias, puedes abrir una [petición aquí](https://github.com/tu-usuario/pensamiento-algoritmico/issues).
 
 ---
 
