@@ -10,6 +10,11 @@ La **programación** es el proceso de diseñar y construir soluciones a problema
 
 Un **algoritmo** es un conjunto de pasos ordenados y definidos que describen la solución a un problema. Son independientes del lenguaje de programación y pueden representarse de diferentes maneras.
 
+### 📌 Partes de un algoritmo:
+✅ Entradas: Son todas esas variables y datos necesarios para que el algoritmo pueda iniciar.  
+✅ Procedimiento: Son todos los procesos requeridos para la correcta ejecución del algoritmo.  
+✅ Salida: Son todos los resultados que el algoritmo puede arrojar.  
+
 ### 📌 Características de un algoritmo:
 
 ✅ Preciso: Define cada paso con claridad.  
