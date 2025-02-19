@@ -50,7 +50,12 @@ Expresión en palabras comunes. Ejemplo:
 ## 2️⃣ **Diagrama de Flujo**
 
 Representación gráfica con símbolos para cada tipo de acción (inicio, proceso, decisión, fin).  
-Ejemplo de diagrama de flujo para la suma de dos números: 🖼️
+Ejemplo de diagrama de flujo para la suma de dos números:  
+
+<div align="center">
+  <img src="../assets/Calcular_Area_Triangulo.png" width="400"/>
+</div>
+
 
 ## 3️⃣ **Pseudocódigo**
 
