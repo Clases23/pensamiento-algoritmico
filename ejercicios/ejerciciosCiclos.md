@@ -282,3 +282,117 @@ Escribe un programa que imprima los cuadrados de los primeros `N` números, dond
 Escribe un programa que imprima una pirámide de números. El número de filas será ingresado por el usuario, y en cada fila se deben imprimir los números desde 1 hasta el número de la fila utilizando un ciclo **for**.
 
 ---
+
+# **🔄 Ejercicios Retadores con Simulación de Do While en Python**  
+
+En muchos lenguajes de programación como **C, C++ o Java**, el ciclo **do while** se usa cuando queremos asegurarnos de que un bloque de código se ejecute **al menos una vez**, sin importar si la condición es falsa desde el inicio.  
+
+## **📌 Sintaxis del Do While en Pseudocódigo**
+```pseudocode
+Repetir  
+    // Bloque de instrucciones  
+Hasta que (condición)  
+```
+
+Este ciclo garantiza que las instrucciones se ejecuten **mínimo una vez**, y luego evalúa la condición para decidir si continuar o detenerse.
+
+---
+
+## **📌 Python no tiene un ciclo Do While**  
+
+Python **no tiene** un ciclo `do while` como otros lenguajes. Sin embargo, podemos **simularlo** usando un `while True` junto con un `break` para salir del bucle cuando la condición se cumpla.  
+
+### **📌 Simulación de Do While en Python**
+```python
+while True:
+    # Bloque de instrucciones
+    if condicion:
+        break
+```
+✅ **La clave** de esta estructura es que **el código siempre se ejecuta al menos una vez**, y el `break` se encarga de salir del bucle cuando sea necesario.  
+
+---
+
+## **📌 Casos de Uso del Do While**  
+
+El ciclo **do while** (o su simulación en Python) es útil en los siguientes escenarios:  
+🔹 **Pedir datos al usuario hasta que sean válidos** (ejemplo: ingresar un número positivo).  
+🔹 **Menús interactivos** donde el usuario debe elegir una opción antes de salir.  
+🔹 **Validaciones de contraseñas** o intentos de acceso.  
+🔹 **Juegos o procesos que se ejecutan al menos una vez antes de validar condiciones**.  
+
+---
+
+# **Ejercicios con Simulación de Do While en Python**  
+
+A continuación, se presentan **10 ejercicios** que te ayudarán a reforzar la comprensión del ciclo **do while** en Python.  
+
+---
+
+### **Ejercicio 1: Pedir números hasta que el usuario ingrese 0**  
+📌 **Enunciado:**  
+Escribe un programa que solicite al usuario ingresar un número. El programa debe repetirse hasta que el usuario ingrese `0`.  
+
+---
+
+### **Ejercicio 2: Validar entrada del usuario (número positivo)**  
+📌 **Enunciado:**  
+Pide al usuario que ingrese un número positivo. Si ingresa un número negativo, sigue pidiéndolo hasta que ingrese un valor válido.  
+
+---
+
+### **Ejercicio 3: Pedir contraseña hasta que sea correcta**  
+📌 **Enunciado:**  
+Escribe un programa que solicite una contraseña y solo termine cuando el usuario ingrese la correcta (por ejemplo, `"secreto"`).  
+
+---
+
+### **Ejercicio 4: Contador de intentos fallidos**  
+📌 **Enunciado:**  
+Pide un número del 1 al 10 al usuario. Si ingresa un número incorrecto, sigue pidiéndolo hasta que acierte. Al final, muestra cuántos intentos tomó.  
+
+---
+
+### **Ejercicio 5: Menú interactivo hasta que el usuario elija salir**  
+📌 **Enunciado:**  
+Crea un programa con un menú donde el usuario pueda elegir entre diferentes opciones y solo termine cuando elija `"Salir"`.  
+
+---
+
+### **Ejercicio 6: Pedir un número hasta que sea par**  
+📌 **Enunciado:**  
+Solicita al usuario ingresar un número. Si es impar, vuelve a pedirlo hasta que ingrese un número par.  
+
+---
+
+### **Ejercicio 7: Calcular la suma de números ingresados hasta que el usuario ingrese -1**  
+📌 **Enunciado:**  
+El usuario debe ingresar números y el programa los sumará hasta que ingrese `-1`, momento en el que mostrará la suma total.  
+
+---
+
+### **Ejercicio 8: Solicitar una edad válida**  
+📌 **Enunciado:**  
+Pide al usuario que ingrese una edad entre `1` y `120`. Si ingresa un valor inválido, sigue pidiéndolo hasta que sea correcto.  
+
+---
+
+### **Ejercicio 9: Confirmar una acción antes de continuar**  
+📌 **Enunciado:**  
+Pide al usuario que confirme una acción ingresando `"S"` o `"N"`. Si ingresa otra cosa, vuelve a pedirlo hasta que sea correcto.  
+
+---
+
+### **Ejercicio 10: Pedir un número dentro de un rango**  
+📌 **Enunciado:**  
+Solicita al usuario que ingrese un número entre `10` y `50`. Si ingresa un número fuera de este rango, sigue pidiéndolo hasta que sea correcto.  
+
+---
+
+## **📌 Resumen**  
+
+✅ **El ciclo `do while` no existe en Python**, pero se puede **simular** con un `while True` y un `break`.  
+✅ **Se usa cuando queremos que el código se ejecute al menos una vez antes de validar la condición**.  
+✅ **Es útil para validaciones de usuario, menús interactivos y sistemas de intentos.**  
+
+---
