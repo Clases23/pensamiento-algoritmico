@@ -1,149 +1,118 @@
 
----
-
-# **🔄 Ciclos Anidados en Programación**  
-
-## **📌 ¿Qué son los ciclos anidados?**  
-
-Un **ciclo anidado** es una estructura de control donde un **bucle se encuentra dentro de otro bucle**. Esto permite ejecutar un conjunto de instrucciones **múltiples veces dentro de cada iteración del ciclo externo**.  
-
-Se pueden anidar ciclos **FOR dentro de FOR**, **WHILE dentro de WHILE**, o combinar **FOR con WHILE**.  
 
 ---
 
-## **📌 Sintaxis de Ciclos Anidados**  
+# **🔄 Ciclos Anidados en Programación**
 
-### **🔹 FOR dentro de FOR**
-```python
-for i in range(3):  # Ciclo externo
-    for j in range(2):  # Ciclo interno
-        print(f"Iteración externa {i}, interna {j}")
-```
-
-### **🔹 WHILE dentro de WHILE**
-```python
-i = 0
-while i < 3:  # Ciclo externo
-    j = 0
-    while j < 2:  # Ciclo interno
-        print(f"Iteración externa {i}, interna {j}")
-        j += 1
-    i += 1
-```
-
-### **🔹 FOR con WHILE**
-```python
-for i in range(3):  # Ciclo externo
-    j = 0
-    while j < 2:  # Ciclo interno
-        print(f"Iteración externa {i}, interna {j}")
-        j += 1
-```
+## **📌 ¿Qué son los ciclos anidados?**
+Un **ciclo anidado** es una estructura de control en programación donde un **bucle se encuentra dentro de otro bucle**. Esto permite que, por cada iteración del bucle externo, el bucle interno se ejecute completamente.
 
 ---
 
-## **📌 ¿Cuándo usar ciclos anidados?**  
+## **📌 ¿Cómo funcionan los ciclos anidados?*
 
-✅ Para recorrer **tablas de datos** (filas y columnas).  
-✅ Para generar **patrones y figuras** con asteriscos o números.  
-✅ Para manejar **múltiples condiciones y validaciones**.  
-✅ Para trabajar con **coordenadas y combinaciones**.  
+El funcionamiento de los ciclos anidados se basa en que el **bucle externo** inicia su ejecución y, en cada una de sus iteraciones, se ejecuta completamente el **bucle interno**. Una vez que el bucle interno finaliza todas sus iteraciones, el control regresa al bucle externo para continuar con su siguiente iteración. Este proceso se repite hasta que el bucle externo completa todas sus iteracions.
 
 ---
 
-### **Ejercicio 1: Tabla de Multiplicar (WHILE anidado) 🎯**  
-📌 **Enunciado:**  
-Escribe un programa que muestre las **tablas de multiplicar del 1 al 5**, donde cada tabla muestre los resultados del `1 al 10`.  
+## **📌 Sintaxis de los ciclos anidados*
 
-✍ **Ejemplo de salida:**  
+En **Python**, los ciclos anidados pueden combinar diferentes tipos de bucles, como `for` y `while`. A continuación, se presentan las sintaxis más comues:
+
+### **🔹 `for` dentro de `for`**
+
+```Python
+for variable_externa in range(límite_externo):
+    for variable_interna in range(límite_interno):
+        # Bloque de instrucciones del bucle interno
 ```
-Tabla del 1  
-1 x 1 = 1  
-1 x 2 = 2  
-...  
-Tabla del 5  
-5 x 1 = 5  
-5 x 2 = 10  
+
+
+### **🔹 `while` dentro de `while`**
+
+```Python
+while condición_externa:
+    while condición_interna:
+        # Bloque de instrucciones del bucle interno
+```
+
+
+### **🔹 Combinación de `for` y `while`**
+
+```Python
+for variable_externa in range(límite_externo):
+    while condición_interna:
+        # Bloque de instrucciones del bucle interno
+```
+
+
+---
+
+## **📌 ¿Cuándo utilizar ciclos anidaos?**
+
+Los ciclos anidados son especialmente útiles en situacions como:
+
+- **Procesamiento de matrices o tablas de datos**: Cuando se necesita recorrer estructuras bidimensionales, como listas delistas.
+
+- **Generación de patrones o figuras**: Para crear representaciones visuales, como pirámides o cuadrados, utilizando carcteres.
+
+- **Manipulación de datos multidimensionales**: Al trabajar con datos que requieren múltiples niveles de iteración para su procesmiento.
+
+---
+
+## **📌 Consideraciones al usar ciclos anidados**
+
+- **Eficincia**:Los ciclos anidados pueden incrementar significativamente el tiempo de ejecución de un programa, especialmente si ambos bucles tienen un gran número de iteraciones. Es importante evaluar el rendimiento y buscar alternativas más eficientes si es necesario.
+
+- **Legibilidad del cdigo**: Anidar múltiples bucles puede hacer que el código sea más difícil de leer y mantener. Se recomienda comentar adecuadamente el código y considerar la posibilidad de dividir el problema en funciones más pequeñas y manejables.
+
+- **Control de varibles**: Es fundamental asegurarse de que las variables de control de cada bucle sean independientes y estén correctamente inicializadas y actualizadas para evitar errores lógicos y ciclos infinitos.
+
+---
+
+## **📌 Ejemplo práctico: Tabla de multilicar**
+
+A continuación, se muestra un ejemplo de cómo utilizar ciclos anidados para generar las tablas de multiplicar del 1 al 5:
+
+``` Python
+for i in range(1, 6):  # Bucle externo para las tablas del 1 al 5
+    print(f"Tabla del {i}:")
+    for j in range(1, 11):  # Bucle interno para multiplicar del 1 al 10
+        resultado = i * j
+        print(f"{i} x {j} = {resultado}")
+    print()  # Línea en blanco para separar las tablas
+```
+
+**Salida esperada**
+
+```
+
+Tabla del 1:
+1 x 1 = 1
+1 x 2 = 2
 ...
-```
+1 x 10 = 10
 
----
+Tabla del 2:
+2 x 1 = 2
+2 x 2 = 4
+...
+2 x 10 = 20
 
-### **Ejercicio 2: Pirámide de Números (WHILE anidado) 🔺**  
-📌 **Enunciado:**  
-Solicita al usuario un número `N` y muestra una pirámide de números hasta `N`.  
+...
 
-✍ **Ejemplo (`N = 5`):**  
-```
-1  
-1 2  
-1 2 3  
-1 2 3 4  
-1 2 3 4 5  
-```
-
----
-
-### **Ejercicio 3: Cuadrado de Asteriscos (WHILE anidado) 🔳**  
-📌 **Enunciado:**  
-Pide al usuario ingresar un número `N` y muestra un cuadrado de `N x N` con asteriscos.  
-
-✍ **Ejemplo (`N = 4`):**  
-```
-****
-****
-****
-****
-```
-
----
-
-### **Ejercicio 4: Tablero de Ajedrez (WHILE anidado) ♟️**  
-📌 **Enunciado:**  
-Muestra un tablero de ajedrez de tamaño `8x8`, representando con `#` y espacios en blanco alternados.  
-
-✍ **Ejemplo de salida:**  
-```
-# # # #  
- # # # #  
-# # # #  
- # # # #  
-```
-
----
-
-### **Ejercicio 5: Validar Ingreso de Notas (WHILE anidado) ✅**  
-📌 **Enunciado:**  
-Un profesor ingresa notas de `N` estudiantes en `M` materias. Si la nota está fuera de `0-100`, debe pedirse nuevamente.  
-
-✍ **Ejemplo:**  
-```
-Ingrese nota del estudiante 1 en materia 1: 110 ❌ (inválido)  
-Ingrese nota del estudiante 1 en materia 1: 85 ✅  
-```
-
----
-
-### **Ejercicio 6: Pirámide Invertida (WHILE anidado) 🔻**  
-📌 **Enunciado:**  
-Solicita un número `N` y muestra una pirámide invertida con asteriscos.  
-
-✍ **Ejemplo (`N=5`):**  
-```
-*****
-****
-***
-**
-*
+Tabla del 5:
+5 x 1 = 5
+5 x 2 = 10
+...
+5x 10 = 50
 ```
 ---
 
-### **Ejercicio 7: Números Primos en un Rango (WHILE anidado) 🔢**  
-📌 **Enunciado:**  
-Muestra los números **primos** entre `1 y N`, verificando en cada número si es primo.  
+## **📌 Reumen**
 
-✍ **Ejemplo (`N = 10`):**  
-```
-2 3 5 7  
-```
+- Los **ciclos anidados** permiten ejecutar un bucle dentro de otro, siendo útiles para manejar estructuras de datos complejas y genera patrones.
+
+- Es esencial prestar atención a la **eficiencia**, **legibilidad** y **control de variables** al implementar ciclos anidados para asegurar un código funcional y mantenible.
+
 ---
