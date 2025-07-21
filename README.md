@@ -51,6 +51,6 @@ Puedes usarlo libremente, pero da crédito si compartes o modificas el contenido
 
 ---
 
-👨‍💻 **Creado por [Clase23](https://github.com/Clase23)**  
+👨‍💻 **Creado por [Clase23](https://github.com/Clases23)**  
 🎯 ¡Espero que este material te ayude a mejorar en programación! 🚀
 ```
