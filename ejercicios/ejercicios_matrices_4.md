@@ -21,8 +21,8 @@ produccion_cacao = [
 ]
 ```
 
-* Cree una función llamada `total_cacao_departamento(departamento: str)` que retorne la **producción total anual** del departamento dado.
-* Cree una función llamada `total_cacao_trimestre(numero_trimestre: int)` que retorne la **producción total** del trimestre indicado (1 a 4).
+* Cree una función llamada `total_cacao_departamento(departamento)` que retorne la **producción total anual** del departamento dado.
+* Cree una función llamada `total_cacao_trimestre(numero_trimestre)` que retorne la **producción total** del trimestre indicado (1 a 4).
 * Cree una función llamada `departamento_mas_cacao()` que retorne el **nombre del departamento** con **mayor producción anual**.
 * Cree una función llamada `trimestre_menos_cacao()` que retorne el **número de trimestre** con **menor producción total**.
 * Cree una función llamada `porcentaje_cacao_por_departamento()` que retorne una **lista de porcentajes** de contribución anual por departamento (en el mismo orden de `departamentos`).
@@ -46,11 +46,11 @@ usuarios_wifi = [
 ]
 ```
 
-* Cree una función llamada `total_usuarios_edificio(edificio: str)` que retorne el **total diario** de usuarios del edificio dado.
-* Cree una función llamada `total_usuarios_franja(nombre_franja: str)` que retorne el **total de usuarios** en **todas** las sedes para la franja dada.
+* Cree una función llamada `total_usuarios_edificio(edificio)` que retorne el **total diario** de usuarios del edificio dado.
+* Cree una función llamada `total_usuarios_franja(nombre_franja)` que retorne el **total de usuarios** en **todas** las sedes para la franja dada.
 * Cree una función llamada `edificio_mayor_afluencia()` que retorne el **nombre del edificio** con mayor total diario.
 * Cree una función llamada `franja_menor_afluencia()` que retorne el **nombre de la franja** con menor total de usuarios sumando todos los edificios.
-* Cree una función llamada `conteo_mediciones_mayores(umbral: int)` que retorne **cuántas celdas** de `usuarios_wifi` son **mayores** que `umbral`.
+* Cree una función llamada `conteo_mediciones_mayores(umbral)` que retorne **cuántas celdas** de `usuarios_wifi` son **mayores** que `umbral`.
 
 ---
 
@@ -71,11 +71,11 @@ notas = [
 ]
 ```
 
-* Cree una función llamada `promedio_estudiante(nombre: str)` que retorne el **promedio** del estudiante indicado.
+* Cree una función llamada `promedio_estudiante(nombre)` que retorne el **promedio** del estudiante indicado.
 * Cree una función llamada `promedio_por_componente()` que retorne una **lista con el promedio** de cada componente (en el orden de `componentes`).
 * Cree una función llamada `mejor_estudiante()` que retorne el **nombre del estudiante** con el **mejor promedio general**.
-* Cree una función llamada `estudiantes_con_bajo_en_alguno(umbral: float)` que retorne una **lista de nombres** con **alguna nota < umbral**.
-* Cree una función llamada `maxima_nota_en_componente(nombre_componente: str)` que retorne la **nota máxima** alcanzada en ese componente.
+* Cree una función llamada `estudiantes_con_bajo_en_alguno(umbral)` que retorne una **lista de nombres** con **alguna nota < umbral**.
+* Cree una función llamada `maxima_nota_en_componente(nombre_componente)` que retorne la **nota máxima** alcanzada en ese componente.
 
 ---
 
@@ -96,8 +96,8 @@ kwh_solar = [
 ]
 ```
 
-* Cree una función llamada `total_kwh_planta(planta: str)` que retorne la **generación total** anual (cuatro semanas) de la planta indicada.
-* Cree una función llamada `total_kwh_semana(numero_semana: int)` que retorne la **generación total** de la semana indicada (1 a 4) sumando todas las plantas.
+* Cree una función llamada `total_kwh_planta(planta)` que retorne la **generación total** anual (cuatro semanas) de la planta indicada.
+* Cree una función llamada `total_kwh_semana(numero_semana)` que retorne la **generación total** de la semana indicada (1 a 4) sumando todas las plantas.
 * Cree una función llamada `planta_mayor_generacion()` que retorne el **nombre de la planta** con **mayor generación total**.
 * Cree una función llamada `semana_menor_generacion()` que retorne el **número de semana** con **menor generación total**.
 * Cree una función llamada `plantas_sobre_umbral(umbral: int)` que retorne una **lista de plantas** cuya **generación total** supera `umbral`.
@@ -123,10 +123,10 @@ inventario = [
 ]
 ```
 
-* Cree una función llamada `stock_final_de(bodega: str)` que retorne el **StockFinal** de la bodega dada.
-* Cree una función llamada `bodegas_bajo_stock(umbral: int)` que retorne una **lista de bodegas** con `StockFinal < umbral`.
-* Cree una función llamada `total_por_columna(nombre_columna: str)` que retorne el **total** de la columna indicada (`"StockInicial"`, `"Entradas"`, `"Salidas"` o `"StockFinal"`).
-* Cree una función llamada `es_consistente(bodega: str)` que retorne `True` si la **bodega cumple** la regla de consistencia y `False` en caso contrario.
+* Cree una función llamada `stock_final_de(bodega)` que retorne el **StockFinal** de la bodega dada.
+* Cree una función llamada `bodegas_bajo_stock(umbral)` que retorne una **lista de bodegas** con `StockFinal < umbral`.
+* Cree una función llamada `total_por_columna(nombre_columna)` que retorne el **total** de la columna indicada (`"StockInicial"`, `"Entradas"`, `"Salidas"` o `"StockFinal"`).
+* Cree una función llamada `es_consistente(bodega)` que retorne `True` si la **bodega cumple** la regla de consistencia y `False` en caso contrario.
 * Cree una función llamada `bodegas_inconsistentes()` que retorne una **lista con los nombres** de las bodegas **inconsistentes**.
 
 ---
